@@ -1,0 +1,84 @@
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+        .book {
+            padding: 10px;
+            width: 180px;
+            height: 250px;
+            float: left;
+        }
+
+        #portapdf {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #484848;
+            margin: 0 auto;
+        }
+
+        #ver{
+          height: 650px;
+          width:  100%;
+          position: absolute;
+        }
+
+        b{
+          text-align: center center;
+        }
+
+#popup {
+		background-color: rgba(0,0,0,0.8);
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:0;
+		-webkit-animation:autopopup 2s;
+		-moz-animation:autopopup 2s;
+		animation:autopopup 2s;
+	}
+		@-webkit-keyframes autopopup {
+			from {opacity: 0;margin-top:-200px;}
+			to {opacity: 1;}
+		}
+		@-moz-keyframes autopopup {
+			from {opacity: 0;margin-top:-200px;}
+			to {opacity: 1;}
+		}
+		@keyframes autopopup {
+			from {opacity: 0;margin-top:-200px;}
+			to {opacity: 1;}
+		}
+
+	#popup:target {
+		-webkit-transition:all 1s;
+		-moz-transition:all 1s;
+		transition:all 1s;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.popup-contenedor {
+		position: relative;
+		margin:7% auto;
+		padding:10px 30px;
+		background-color: #fafafa;
+		color:#333;
+		border-radius: 3px;
+		width:30%;
+	}
+
+	a.popup-cerrar {
+		position: absolute;
+		top:3px;
+		right:3px;
+		background-color: #333;
+		padding:7px 10px;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 1;
+		color:#fff;
+	}
